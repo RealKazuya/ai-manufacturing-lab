@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI賦能製造｜課程入口</title><style>body{font-family:"Microsoft JhengHei","Noto Sans TC",sans-serif;max-width:900px;margin:24px auto;padding:0 16px;line-height:1.7;color:#111;background:#fff}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #999;padding:6px 8px;text-align:left}th{background:#eee}a{color:#0a4f96}</style></head><body>
+<h1>AI賦能製造：從工廠數據到AI決策</h1><p>經濟部產業智慧化課程　·　講者張季倫　·　所有資料都是教學用虛構（恆準精密工業）。</p>
+<h2>投影片</h2><p><a href="slides/index.html">開啟投影片</a>（按 F 全螢幕、S 開講者視窗、Esc 總覽）</p>
+<h2>課後延伸包：Colab 筆記本</h2><p>點連結會在 Google Colab 開啟，需要 Google 帳號；由上往下逐格執行即可，資料會自動從這個網站讀取。</p>
+<table><tr><th>節次</th><th>筆記本</th><th>內容</th></tr><tr><td>第 1 節</td><td><a href="https://colab.research.google.com/github/RealKazuya/ai-manufacturing-lab/blob/main/notebooks/N0_mqtt_live.ipynb">N0_mqtt_live.ipynb</a></td><td>MQTT 即時資料示範（講師用，公開伺服器任何人可讀）</td></tr>
+<tr><td>第 2 節</td><td><a href="https://colab.research.google.com/github/RealKazuya/ai-manufacturing-lab/blob/main/notebooks/N1_iot_health.ipynb">N1_iot_health.ipynb</a></td><td>資料健檢與稼動率</td></tr>
+<tr><td>第 4 節</td><td><a href="https://colab.research.google.com/github/RealKazuya/ai-manufacturing-lab/blob/main/notebooks/N2_aoi_labeling.ipynb">N2_aoi_labeling.ipynb</a></td><td>標註評分與資料增強</td></tr>
+<tr><td>第 5 節</td><td><a href="https://colab.research.google.com/github/RealKazuya/ai-manufacturing-lab/blob/main/notebooks/N3_predictive_maintenance.ipynb">N3_predictive_maintenance.ipynb</a></td><td>預測性維護：門檻、成本與切分</td></tr>
+<tr><td>第 6 節</td><td><a href="https://colab.research.google.com/github/RealKazuya/ai-manufacturing-lab/blob/main/notebooks/N4_sales_forecast.ipynb">N4_sales_forecast.ipynb</a></td><td>銷售預測：基準、LightGBM、Chronos-Bolt</td></tr>
+<tr><td>第 8 節</td><td><a href="https://colab.research.google.com/github/RealKazuya/ai-manufacturing-lab/blob/main/notebooks/N5_rag_retrieval.ipynb">N5_rag_retrieval.ipynb</a></td><td>RAG 檢索與黃金問題評估</td></tr></table>
+<h2>Neo4j 供應鏈圖</h2><ol><li>到 Neo4j Aura 建一個免費執行個體（密碼只顯示一次，請下載帳密檔）。</li>
+<li>在 Query 貼上 <a href="data/neo4j/build_graph.cypher">build_graph.cypher</a> 執行。</li>
+<li>依序試 <a href="data/neo4j/queries.cypher">queries.cypher</a> 的查詢；第 10 節情境先執行 <a href="data/neo4j/events.cypher">events.cypher</a>。</li></ol>
+<h2>資料</h2><p><a href="https://github.com/RealKazuya/ai-manufacturing-lab/tree/main/data">data/</a>：感測資料、AOI 合成影像與真值、設備每日特徵與維修紀錄、月訂單、虛構維護手冊與工單、Neo4j 腳本。</p>
+</body></html>
